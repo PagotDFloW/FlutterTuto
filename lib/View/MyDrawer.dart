@@ -40,8 +40,9 @@ class MyDrawerState extends  State<MyDrawer>{
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                          image: NetworkImage(GlobalUser.avatar!),
-                          fit: BoxFit.fitHeight
+                        //GlobalUSer.avatar is null set default image
+                        image: NetworkImage(GlobalUser.avatar == null ? "https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" : GlobalUser.avatar!),
+                        fit: BoxFit.fitHeight
                       ),
                     ),
 

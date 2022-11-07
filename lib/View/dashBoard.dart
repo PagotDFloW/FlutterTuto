@@ -28,9 +28,9 @@ class dashboardState extends State<dashBoard>{
 
       appBar : AppBar(
         title : const Text("Ma deuxième page"),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blueAccent,
       ),
-      backgroundColor: Colors.yellow,
+      backgroundColor: Colors.white70,
       body : bodyPage()
     );
   }
@@ -75,8 +75,7 @@ class dashboardState extends State<dashBoard>{
                             },
                             title: Text(user.nomComplet()),
                             subtitle: Text(user.pseudo!),
-                            leading: Image.network(user.avatar!),
-                            trailing: Text(user.mail),
+                          trailing: Text(user.mail),
                           ),
 
                         ),
@@ -86,14 +85,9 @@ class dashboardState extends State<dashBoard>{
                   else
                     {
                       return Container();
-                    }
-                    
-                    
-                    
                   
+                };
                 },
-
-
               );
             }
         }
